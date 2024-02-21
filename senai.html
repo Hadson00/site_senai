@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <style>
+        .t {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .w {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bord {
+            background-color: #014073;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: white;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .j {
+            justify-content: center;
+        }
+
+        .back {
+            background-color: #014073;
+            color: white;
+        }
+
+        .p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+        .li{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+        .p2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: white;
+        }
+        td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: #014073;
+        }
+        .a{
+            align-items: center;
+        }
+        .img{
+            margin-bottom: 0;
+        }
+        .hr{
+            display: block;
+            unicode-bidi: isolate;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
+            border-style: inset;
+            border-width: 1px;
+        }
+        .i{
+            object-fit: cover;
+        }
+        @media screen and (max-width: 600px) {
+            .row {
+                margin-right: 0;
+            }
+
+            .w {
+                height: auto;
+            }
+            .img{
+                margin-bottom: 30px;
+            }
+            .a{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid px-5">
+            <img src="assets/img/logo.svg" alt="logo" height="80px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse row" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item px-5">
+                        <a class="nav-link active t" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link t" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link t" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Caroussel-->
+    <div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner w">
+                <div class="carousel-item active">
+                    <img src="assets/img/cur.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item w">
+                    <img src="assets/img/cur2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item w">
+                    <img src="assets/img/cur3.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--Icons-->
+    <div class="container-fluid text-center py-5">
+        <div class="row">
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="assets/img/bolsa.png" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Cursos Senai</h1>
+                    <a href="#c" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="assets/img/tel.png" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Fale com a equipe</h1>
+                    <a href="#f" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="assets/img/lamp.png" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Dúvidas Frequentes</h1>
+                    <a href="#d" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sobre-->
+    <div class="row text-center py-5 back">
+        <h1 style="padding-bottom: 50px;">Sobre</h1>
+        <div class="col-xl-6 col-sm-12">
+            <p class="p px-5">
+                O Memorial de Guerra de Hove é um memorial da
+                Primeira Guerra Mundial projetado por Sir Edwin
+                Lutyens e localizado na Grand Avenue em Hove,
+                parte da cidade de Brighton e Hove, na costa sul da
+                Inglaterra. Hove foi o local de um dos primeiros
+                eventos de recrutamento no início da guerra e,
+                posteriormente, de vários hospitais militares. Mais
+                de 600 homens da cidade foram mortos durante a
+                guerra, um quarto deles apenas do regimento
+                local. Um comité do memorial de guerra foi
+                estabelecido em 1919 e Lutyens foi contratado
+                como arquiteto. Um projeto foi estabelecido em
+                1920 após duas propostas mal sucedidas; Lutyens
+                escolheu o local entre várias opções.
+            </p>
+        </div>
+        <div class="col-xl-6 col-sm-12">
+            <p class="p px-5">
+                O Memorial de Guerra de Hove é um memorial da
+                Primeira Guerra Mundial projetado por Sir Edwin
+                Lutyens e localizado na Grand Avenue em Hove,
+                parte da cidade de Brighton e Hove, na costa sul da
+                Inglaterra. Hove foi o local de um dos primeiros
+                eventos de recrutamento no início da guerra e,
+                posteriormente, de vários hospitais militares. Mais
+                de 600 homens da cidade foram mortos durante a
+                guerra, um quarto deles apenas do regimento
+                local. Um comité do memorial de guerra foi
+                estabelecido em 1919 e Lutyens foi contratado
+                como arquiteto. Um projeto foi estabelecido em
+                1920 após duas propostas mal sucedidas; Lutyens
+                escolheu o local entre várias opções.
+            </p>
+        </div>
+    </div>
+    <!--IMG-->
+    <div>
+        <img src="assets/img/sena.jpg" alt="senai" width="100%" height="auto">
+    </div>
+    <!--Cursos-->
+    <div id="c" class="back container-fluid text-center">
+        <h1 style="padding-top: 48px;">Cursos</h1>
+        <div class="row py-5">
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Excel</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$48,00</li>
+                        <li class="list-group-item li">Tempo de duração: 24h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Modelagem</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$112,00</li>
+                        <li class="list-group-item li">Tempo de duração: 60h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Cronometragem</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$80,00</li>
+                        <li class="list-group-item li">Tempo de duração: 40h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Administração</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$95,00</li>
+                        <li class="list-group-item li">Tempo de duração: 50h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Excel Nivel intermedário</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$72,00</li>
+                        <li class="list-group-item li">Tempo de duração: 40h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="assets/img/cu.png" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Liderança</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$32,00</li>
+                        <li class="list-group-item li">Tempo de duração: 12h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Senai-->
+    <div id="f" class="row justify-content-center a py-5">
+        <div class="col-xl-4 col-sm-12 img">
+            <img src="assets/img/pfdt.jpg" alt="." width="100%" height="auto">
+        </div>
+        <div class="col-xl-4 col-sm-12">
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="assets/img/tel2.svg" /></td>
+                    <td>Whatsapp</td>
+                </tr>
+            </table>
+            <p class="p">(99) 9999-9999</p>
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="assets/img/ig.svg" /></td>
+                    <td>Instagram</td>
+                </tr>
+            </table>
+            <p class="p">@senai</p>
+        </div>
+    </div>
+    <!--Perguntas-->
+    <div id="d" class="back py-5">
+        <div style="padding-bottom: 50px;" class="container">
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="assets/img/lamp.png"></td>
+                    <td class="p2">Dúvidas Frequentes</td>
+                </tr>
+            </table>
+        </div>
+        <div class="accordion container " id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Os cursos entregam certificado?</h3>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        Todos os cursos entregam certificado após a formação do aluno.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>Como me matricular?</h3>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        Para quem quer estudar no SENAI e fazer um curso técnico, ingresso é por meio de pré-matrículas, 
+                        abertas semestralmente. Os alunos se cadastram 
+                        para participarem da seleção e entram em contato com a unidade.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>Quais são as capacitações que os cursos oferecem?</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        O SENAI oferece cursos de Qualificação Profissional Básica para profissionais 
+                        que buscam se preparar para uma profissão de acordo com o perfil requerido no 
+                        mercado de trabalho e compatíveis com a complexidade tecnológica.Privilegiando 
+                        o desenvolvimento do senso crítico, da autonomia de pensamento e da criatividade 
+                        na realização das atividades profissionais, os cursos podem tanto qualificar as 
+                        pessoas que ainda não têm competências da área profissional desejada, como oferecer 
+                        a oportunidade de requalificação profissional.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <footer class="py-2" style="background-color: #014073; color: white; text-align: center;">
+        <p style="margin: 0;">Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
